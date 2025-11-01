@@ -1,0 +1,19 @@
+<header>
+  <h1>ברוכים הבאים לאתר שלנו!</h1>
+  <main>
+</main>
+  <nav>
+    <ul>
+      <li><a [routerLink]="['/home']">בית</a></li>
+      <li><a [routerLink]="['/about']">אודות</a></li>
+      <li><a [routerLink]="['/services']">שירותים</a></li>
+      <li><a [routerLink]="['/contact']">צור קשר</a></li>
+      
+      <li><a [routerLink]="['/user', 123]">משתמש (ID: 123)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
